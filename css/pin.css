@@ -1,0 +1,97 @@
+.screen{
+  background:#020617;
+  color:#22c55e;
+  padding:18px;
+  font-size:30px;
+  letter-spacing:6px;
+  text-align:right;
+  border-radius:16px;
+  margin-bottom:18px;
+  transition:.15s;
+}
+
+/* =========================
+   STITCH DI PIN PAGE
+========================= */
+.stitch-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-bottom:14px;
+}
+
+.stitch{
+  width:120px;
+  animation:sway 2.5s ease-in-out infinite;
+}
+
+/* goyang halus */
+@keyframes sway{
+  0%,100%{ transform:rotate(-4deg) }
+  50%{ transform:rotate(4deg) }
+}
+
+/* tombol */
+.keys{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.keys button{
+  padding:18px;
+  font-size:18px;
+  border-radius:16px;
+  border:none;
+  background:#eef2ff;
+  transition:background .15s, transform .1s;
+}
+
+/* efek klik */
+.keys button.active{
+  background:#1f4fd8;
+  color:white;
+  transform:scale(.95);
+}
+
+.del{
+  background:#ef4444;
+  color:white;
+}
+
+.ok{
+  background:#22c55e;
+  color:white;
+}
+
+/* shake */
+.shake{
+  animation:shake .4s;
+}
+
+@keyframes shake{
+  0%{transform:translateX(0)}
+  25%{transform:translateX(-8px)}
+  50%{transform:translateX(8px)}
+  75%{transform:translateX(-8px)}
+  100%{transform:translateX(0)}
+}
+
+/* badai */
+.storm{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,.25) 0,
+    rgba(255,255,255,.25) 2px,
+    transparent 4px,
+    transparent 8px
+  );
+  animation:rain .25s linear infinite;
+}
+
+@keyframes rain{
+  from{background-position:0 0}
+  to{background-position:0 40px}
+}

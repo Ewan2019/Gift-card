@@ -1,0 +1,27 @@
+/* =========================
+   STITCH MOVE CONTROLLED
+========================= */
+
+.stitch{
+  will-change: transform;
+}
+
+/* gerakan aktif */
+.stitch.play{
+  animation: stitchMove 1s ease-in-out;
+}
+
+@keyframes stitchMove{
+  0%{
+    transform:translateY(0) rotate(0);
+  }
+  30%{
+    transform:translateY(-14px) rotate(-8deg);
+  }
+  60%{
+    transform:translateY(8px) rotate(8deg);
+  }
+  100%{
+    transform:translateY(0) rotate(0);
+  }
+}

@@ -1,0 +1,34 @@
+/* =========================
+   STICKY TITLE FIX
+========================= */
+
+.message-card{
+  max-height:80vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* judul nempel */
+.sticky-title{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:10px 0;
+  z-index:10;
+  border-bottom:1px solid #e5e7eb;
+}
+
+/* area yang bisa di scroll */
+.scroll-area{
+  overflow-y:auto;
+  padding-right:6px;
+}
+
+/* halusin scrollbar (opsional) */
+.scroll-area::-webkit-scrollbar{
+  width:6px;
+}
+.scroll-area::-webkit-scrollbar-thumb{
+  background:#c7d2fe;
+  border-radius:999px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter PIN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pin.css">
+</head>
+<body>
+
+<div class="card calculator">
+
+  <!-- STITCH GIF DI ATAS PIN -->
+  <div class="stitch-wrapper">
+    <img
+      src="https://i.pinimg.com/originals/a7/5a/59/a75a59b1116cc8282873254511f57286.gif"
+      alt="Stitch"
+      class="stitch"
+    >
+  </div>
+
+  <h4>Hi nak kicikk, ayo tebak passwordnya, I bet you knoww!!!</h4><br>
+
+  <!-- DISPLAY PIN -->
+  <div class="screen" id="pinScreen">----</div>
+
+  <div class="keys">
+    <button onclick="pressKey(this,'1')">1</button>
+    <button onclick="pressKey(this,'2')">2</button>
+    <button onclick="pressKey(this,'3')">3</button>
+
+    <button onclick="pressKey(this,'4')">4</button>
+    <button onclick="pressKey(this,'5')">5</button>
+    <button onclick="pressKey(this,'6')">6</button>
+
+    <button onclick="pressKey(this,'7')">7</button>
+    <button onclick="pressKey(this,'8')">8</button>
+    <button onclick="pressKey(this,'9')">9</button>
+
+    <button class="del" onclick="delNum()">DEL</button>
+    <button onclick="pressKey(this,'0')">0</button>
+    <button class="ok" onclick="checkPin()">OK</button>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

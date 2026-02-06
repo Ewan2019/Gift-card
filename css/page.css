@@ -1,0 +1,19 @@
+/* =========================
+   STITCH DI CHOICE PAGE
+========================= */
+.stitch-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-bottom:14px;
+}
+
+.stitch{
+  width:140px;
+  animation:sway 2.5s ease-in-out infinite;
+}
+
+/* goyang halus */
+@keyframes sway{
+  0%,100%{ transform:rotate(-4deg) }
+  50%{ transform:rotate(4deg) }
+}
